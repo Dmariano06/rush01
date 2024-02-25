@@ -89,5 +89,5 @@ int **parse(char *s, int *n)
         return (NULL);
     // initialise la grille res avec les contrainte de la chaîne s
     init_res(res, s, *n, -1);
-    return (res); // Renvoie la grille de contraintes correctement initialisée
+    return (res); // renvoie la grid de contraintes correctement initialisé
 }

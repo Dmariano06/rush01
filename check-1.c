@@ -55,19 +55,19 @@ int check_col(int **grid, int col_index, int size)
 	int mx;
 	int i;
 
-	res = 0; // Initialisation du nombre de bâtiments visibles
-	mx = 0; // Initialisation de la hauteur maximale vue jusqu'à présent
+	res = 0; // init du nbr de bat visibles
+	mx = 0; // init de la hauteur maxvue jusqu'à mtn
 	i = 0;
 	while (i < size)
 	{
 		if (grid[i][col_index] > mx)
 		{
-			mx = grid[i][col_index]; // Met à jour la hauteur maximale vue
-			res++; // Incrémente le nombre de bâtiments visibles
+			mx = grid[i][col_index]; // Maj la hauteur max vue
+			res++; // Incr le nbr de bat visibles
 		}
 		i++;
 	}
-	// Renvoie le nombre de bâtiments visibles dans la colonne
+	// Renvoie le nbr de bât visibles dans la colonne
 	return (res);
 }
 
