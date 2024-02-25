@@ -24,7 +24,7 @@ int	cnt_words(char *s)
 }
 
 // output format -> res[0] = col_up, res[1] = col_down, res[2] = row_left, res[3] = row_right
-// initialise la grille res avec les contraintes extraites de la chaîne s
+// initialise la grille res avec les contraintes de la chaîne s
 int **init_res(int **res, char *s, int n, int i)
 {
     int j;
@@ -72,7 +72,7 @@ int check_space(char *s)
 
 int **parse(char *s, int *n)
 {
-    int **res; // Grille de contraintes
+    int **res; // grille de contraintes
 
     // verifie si la chaîne s contient des espaces consecutif
     if (!check_space(s))

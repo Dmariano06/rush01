@@ -1,7 +1,7 @@
 #include "rush01.h"
 int main(int ac, char **av)
 {
-	int **sky;
+	int **sky; //sky contraintes
 	int n;
 
 	if (ac != 2)

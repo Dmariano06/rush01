@@ -37,7 +37,7 @@ int **alloc_grid(int n, int m) // allocation de la mémoire nécessaire pour res
 			return (free_grid(res, n));
 		j = 0;
 		while (j < m)
-			res[i][j++] = 0;   // on remplit le tableau avec des 0;
+			res[i][j++] = 0;   // on remplit la grille avec des 0;
 		i++;
 	}
 	return (res);
